@@ -1,0 +1,27 @@
+
+Evaluation Criteria
+Your total score is calculated as weighted sum of 6 scores — similarities between statistics of original and generated networks. Each score takes values from the interval [0, 1], where 1 — absolute similarity with the original network. The scores are
+
+    "KS"
+        1 - KS_dist
+        where KS_dist is Kolmogorov-Smirnov distance between degree distributions of real and generated networks
+    "Radius"
+        where GK is Gaussian Kernel, r is a radius of a gigantic connected component (GCC) of the original network, r' is a radius of a generated network, sigma_r is a sigma of a radius from stats.txt file
+    "Diameter" (GCC), "Av. clustering", "Av. path length" (GCC), "Number of CC" are calculated by Gaussian Kernel in the same way.
+    "Total"
+        1/6 * KS + 1/6 * Radius + 1/6 * Diameter + 1/6 * Av. clustering + 1/6 * Av. path length + 1/6 * Number of CC
+
+All scores immediately take value 0 if a generated network has incorrect number of nodes. All scores are multiplied by 100 on the leaderboard.
+
+Baselines
+Baselines are calculated by the following algorithm:
+
+    Generate a random degree sequence using Inverse Transform Sampling
+    Generate a valid graph by Configuration Model
+    Calculate total score
+    Repeat 1-3 steps 1000 times and accumulate a set of total scores
+
+Baseline for grade 4: beat a mean total score
+Baseline for grade 6: beat a mean + 3*sigma total score
+
+Calculated baselines are in the leaderboard.

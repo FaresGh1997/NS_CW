@@ -1,0 +1,17 @@
+
+Evaluation Criteria
+On the leaderboard you will see three scores:
+
+    Profit — calculated as "total amount of money at the end - initial budget". This is the main score.
+    Accepted — the total number of accepted people at the end.
+    Days — the total duration of your campaign.
+
+Baselines
+Baselines are calculated as follows:
+
+    Simultaneously sign 10 random contracts on the first day. Decrease the number of contracts if you do not have enough money
+    Wait the end of the campaign and calculate your profit.
+    Repeat 10000 times
+
+Baseline for grade 4: beat an average positive profit
+Baseline for grade 6: beat an average + standard deviation positive profit

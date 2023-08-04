@@ -1,0 +1,23 @@
+
+Challenge Overview
+Your goal is to generate an undirected network that is as close as possible to the original real network. You do not have the original network in the explicit view, but you know some of its statistics. All statistics are in stats.txt file that contains a dictionary of the form
+
+    number_nodes (number of nodes): value
+    number_cc (number of connected components): value, sigma
+    radius (radius of giant component): value, sigma
+    diameter (diameter of giant component): value, sigma
+    average_clustering (average clustering coefficient): value, sigma
+    average_path_length (average path length): value, sigma
+    degree_cdf (empirical CDF of degree distribution): values, probabilities
+
+Meaning of all these sigmas is described in Evaluation section. 
+
+You can use this code to draw CDF
+
+q_seq, p_seq = stats['degree_cdf']
+plt.plot(
+    np.append(np.repeat(q_seq, 2)[1:], q_seq[-1]), 
+    np.repeat(p_seq, 2)
+)
+plt.show()
+

@@ -1,0 +1,15 @@
+
+Challenge Overview
+
+You are running the marketing campaign for a brand new pocket device. Initially you can sign contracts with a few people to advertize your gadget among their neigbours. The more "famous" person you are picking the greater price appears in the contract. Contract cost can be calculated as 300$ * NN(i), where NN(i) is the number of neigbours of the person i. If at least 18% a person's neighbors have already been affected, then he/she will also be affected tomorrow. You earn 50$ per each affected person. Every day you have to choose whether to sign new contracts or wait. You need time to discuss terms of a contract, so you cannot sign more than 10 contracts on the same day. Your task is to maximize profit of your campaign with an initial budget of 10,000$. Your campaign is considered completed after 60 days.
+
+Again, all parameters of the task:
+
+    Budget: 10,000$
+    Contract cost: 300$ * NN(i)
+    Income per person: 50$
+    Exposure threshold: 18%
+    Contracts limit: 10 per day
+    Time limit: 60 days
+
+A model of society is based on undirected SNAP Facebook network marketing_edges.txt

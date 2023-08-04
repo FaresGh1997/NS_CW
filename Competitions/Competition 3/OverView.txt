@@ -1,0 +1,8 @@
+
+Your goal is to predict future links in a citation network. The dataset is represented by 3 files:
+
+    node_feat.txt — 32-dimensional vectors that describe the content of papers
+    train_edges.txt — directed edges of the citation network
+    unlabeled_edges.txt — unlabeled pairs of nodes
+
+Predict labels for unlabeled pairs of nodes: 0 — disconnected, 1 — connected.

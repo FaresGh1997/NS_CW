@@ -1,0 +1,11 @@
+
+Here are balanced classes, so the usual accuracy metric is used:
+
+    Accuracy = True predictions / All predictions
+
+
+Baselines:
+
+    Grade 4: Concatenate node features and train Gradient Boosting with negative sampling.
+    Grade 6: Train GNN with negative sampling. GNN consists of encoder and decoder. Encoder is two-layer GCN that takes node features and returns node emebeddings. Decoder is two-layer MLP that takes hadamart product of node embeddings and predicts links.
+
