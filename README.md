@@ -18,7 +18,9 @@ This repo demonstrates multiple Network Science Techniques including:
 13. Link Prediction on [Email network dataset](http://snap.stanford.edu/data/email-Eu-core-temporal.html) using similarity score, Dot product predictor and edges embeddings.
 14. Deep dive into graph embeddings using DeepWalk, Node2Vec, Hierarchical softmax and GraRep methods.
 15. A Study on the different types of GNN (Graph neural networks) on [the Cora dataset](https://data.dgl.ai/wheels/repo.html).
+16. Knowledge Graphs models including: Translation models, Entitiy embeddings, Nearest neighbors and Tail predictions.
 
-Skills developed: pandas | scikit-learn | matplotlib | numpy | Network Science | Node Classifications | GNN | pytorch | networkx | python | Graph and Node embeddings | Graph Statistics.
+    
+Skills developed: pandas | scikit-learn | matplotlib | numpy | Network Science | Node Classifications | GNN | pytorch | networkx | python | Graph and Node embeddings | Graph Statistics | Knowledge Graphs.
 
 This repo is part of the NS course, HSE, Moscow, Russia.
